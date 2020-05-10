@@ -1,8 +1,11 @@
 /*
  * D3D9COM.H : COM Interface Classes For Direct3D9, Version 9.0c.
  *
- *  Created on: 23 sep. 2019
- *      Author: Martin Andreasson
+ * Created on: 22 sep 2019
+ * Updated on: 10 may 2020
+ *     Author: Martin Andreasson
+ *    Version: 1.0
+ *    License: Mozilla Public License Version 2.0
  */
 
 #ifndef HEADER_D3D9COM_H_

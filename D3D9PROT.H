@@ -1,18 +1,21 @@
 /*
  * D3D9PROT.H : Prototypes For Direct3D9, Version 9.0c.
  *
- *  Created on: 23 sep. 2019
- *      Author: Martin Andreasson
+ * Created on: 22 sep 2019
+ * Updated on: 10 may 2020
+ *     Author: Martin Andreasson
+ *    Version: 1.0
+ *    License: Mozilla Public License Version 2.0
  */
 
 #ifndef HEADER_D3D9PROT_H_
 #define HEADER_D3D9PROT_H_
 
-#include "ENGINE/SUPPORT/HARDFORM.H"
+#include "HARDFORM.H"
 
-#include "ENGINE/DIRECT3D/D3D9ENUM.H" // enums
-#include "ENGINE/DIRECT3D/D3D9TYPE.H" // types
-#include "ENGINE/DIRECT3D/D3D9UTIL.H" // type utils
+#include "D3D9ENUM.H" // enums
+#include "D3D9TYPE.H" // types
+#include "D3D9UTIL.H" // type utils
 
 /*
 typedef interface IDirect3D9Ex                   IDirect3D9Ex;

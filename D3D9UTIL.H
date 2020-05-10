@@ -1,22 +1,25 @@
 /*
  * D3D9UTIL.H : Utility Functions For Direct3D9, Version 9.0c.
  *
- *  Created on: 23 sep. 2019
- *      Author: Martin Andreasson
+ * Created on: 22 sep 2019
+ * Updated on: 10 may 2020
+ *     Author: Martin Andreasson
+ *    Version: 1.0
+ *    License: Mozilla Public License Version 2.0
  */
 
 #ifndef HEADER_D3D9UTIL_H_
 #define HEADER_D3D9UTIL_H_
 
-#include "ENGINE/SUPPORT/HARDFORM.H"
+#include "HARDFORM.H"
 
-#include "ENGINE/DIRECT3D/D3D9ENUM.H" // enums
-#include "ENGINE/DIRECT3D/D3D9TYPE.H" // types
+#include "D3D9ENUM.H" // enums
+#include "D3D9TYPE.H" // types
 
 #define SI static HF_INLINE
 
 
-//! ColorARGB converts the given color channel values to a color.
+//! d3d9_color_argb converts the given color channel values to a color.
 //! Each channel ranges from 0 (no intensity) to 255 (full intensity).
 SI d3d9_color_t d3d9_color_argb( u08 a, u08 r, u08 g, u08 b )
 {
@@ -28,49 +31,49 @@ SI d3d9_color_t d3d9_color_argb( u08 a, u08 r, u08 g, u08 b )
 	     );
 }
 
-//! ColorRGBA converts the given color channel values to a color.
+//! d3d9_color_rgba converts the given color channel values to a color.
 //! Each channel ranges from 0 (no intensity) to 255 (full intensity).
 SI d3d9_color_t d3d9_color_rgba( u08 r, u08 g, u08 b, u08 a )
 {
 	return d3d9_color_argb( a, r, g, b );
 }
 
-//! ColorXRGB converts the given color channel values to a color.
+//! d3d9_color_xrgb converts the given color channel values to a color.
 //! Each channel ranges from 0 (no intensity) to 255 (full intensity).
 SI d3d9_color_t d3d9_color_xrgb( u08 r, u08 g, u08 b )
 {
 	return d3d9_color_argb( 0xFF, r, g, b );
 }
 
-//! ColorRGB converts the given color channel values to a color.
+//! d3d9_color_rgb converts the given color channel values to a color.
 //! Each channel ranges from 0 (no intensity) to 255 (full intensity).
 SI d3d9_color_t d3d9_color_rgb( u08 r, u08 g, u08 b )
 {
 	return d3d9_color_argb( 0xFF, r, g, b );
 }
 
-//! ColorXYUV converts the given color channel values to a color.
+//! d3d9_color_xyuv converts the given color channel values to a color.
 //! Each channel ranges from 0 (no intensity) to 255 (full intensity).
 SI d3d9_color_t d3d9_color_xyuv( u08 y, u08 u, u08 v )
 {
 	return d3d9_color_argb( 0xFF, y, u, v );
 }
 
-//! ColorYUV converts the given color channel values to a color.
+//! d3d9_color_yuv converts the given color channel values to a color.
 //! Each channel ranges from 0 (no intensity) to 255 (full intensity).
 SI d3d9_color_t d3d9_color_yuv( u08 y, u08 u, u08 v )
 {
 	return d3d9_color_argb( 0xFF, y, u, v );
 }
 
-//! ColorAYUV converts the given color channel values to a color.
+//! d3d9_color_ayuv converts the given color channel values to a color.
 //! Each channel ranges from 0 (no intensity) to 255 (full intensity).
 SI d3d9_color_t d3d9_color_ayuv( u08 a, u08 y, u08 u, u08 v )
 {
 	return d3d9_color_argb( a, y, u, v );
 }
 
-//! ColorValue converts the given color channel values to a color.
+//! d3d9_color_value converts the given color channel values to a color.
 //! Each channel ranges from 0.0 (no intensity) to 1.0 (full intensity).
 SI d3d9_color_t d3d9_color_value( f32 r, f32 g, f32 b, f32 a )
 {
